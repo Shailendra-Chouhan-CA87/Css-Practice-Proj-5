@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #faefef;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    padding-top: 3vh;
+    background-color: #faefef;
+}
+#nav{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:6vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: #faefef;
+}
+#nav h1{
+    height: 100%;
+    width: 50%;
+    font-size: 7vh;
+    margin-right: 4vw;
+    position: relative;
+}
+#nav h1::after{
+    content: "©";
+    font-size: 1.5vw;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+#nav h1::before{
+    content: "model management";
+    font-size: 0.9vw;
+    font-weight: 500;
+    letter-spacing: 0.001vw;
+    font-family: monospace;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+}
+#nav h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+    height: 100%;
+    width: 80%;
+    font-size: 1.1vw;
+    font-weight: 530;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav img{
+    height: 4vh;
+    width: 4vw;
+    margin-left: 4vw;
+    margin-right: 6vw;
+    object-fit: cover;
+
+}
+
+#vid{
+    height: 90vh;
+    width: 100%;
+    padding: 4vh 4vh;
+    position: relative;
+    background-color: #faefef;
+}
+#vid video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+
+}
+#vid #text{
+    height: 30%;
+    width: 90%;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    border-bottom: 3px solid white;
+}
+#text h1{
+    color: rgb(231, 205, 205);
+    font-size: 6vw;
+    padding-bottom: 8%;
+}
+#text h5{
+    color: white;
+    background-color: #d4cece00;
+    font-size: 1.2vw;
+    padding: 1.2vw;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#marque{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #faefef;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: #faefef;
+}
+
+#container img{
+    height: 75%;
+    width: 10%;
+    border-radius: 50%;
+    border: 3px solid rgb(96, 93, 93);
+    object-fit: cover;
+    margin: 2% 2%;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+#textEfect{
+    height: 10%;
+    width: 100%;
+    margin-top: 2%;
+    border-top: 2px solid rgb(108, 104, 104);
+    border-bottom: 2px solid rgb(108, 104, 104);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    background-color: #faefef;
+}
+#textEfect h1{
+    text-decoration: underline;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-right: 3%;
+}
+#textEfect h5{
+    font-size: 0.9vw;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 0.5% 0.8%;
+    border-radius: 50%;
+}
+
+#textEfect h5:hover{
+    color: white;
+    background-color: #504e4e;
+}
+.vowel{
+    color: rgb(223, 196, 19);
+}
+
+
+#section1{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    padding: 4vh 9vh;
+    gap: 10vh;
+    background-color: #faefef;
+}
+#section1 #left1{
+    height: 100%;
+    width: 50%;
+}
+#left1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#right1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#section1 #right1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#right1 #up1{
+    height: 75%;
+    width: 100%;
+}
+#right1 #down1{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+#p1 h4{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+#p2 h5{
+    font-family: sans-serif;
+    font-size: 1vw;
+    font-weight: 550;
+}
+
+#textHeading{
+    width: 100%;
+    height: 11vh;
+    margin-bottom: 3vh;
+    position: relative;
+    border-top: 3px solid #5952529f;
+    border-bottom: 3px solid #5952529f;
+    background-color: #faefef;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#textHeading h1{
+    height: 100%;
+    width: 100%;
+    padding-top: 2.3vh;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #5952529f;
+    animation-name: textAnim;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes textAnim {
+    from{
+        transform: translateX(0%);
+    }to{
+        transform: translateX(48%);
+    }
+    
+}
+
+
+#section2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6%;
+    padding: 2% 4%;
+}
+#section2 #left2{
+    height: 100%;
+    width: 50%;
+}
+#section2 #right2{
+    height: 100%;
+    width: 50%;
+}
+#left2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#right2 #up2{
+    height: 40%;
+    width: 100%;
+}
+#up2 h1{
+    font-family: "Staatliches", sans-serif;
+    font-size: 7vh;
+    font-weight: 500;
+    letter-spacing: 0.4vw;
+    font-style: normal;
+}
+#up2 h3{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    width: 60%;
+    font-weight: 550;
+}
+#up2 p{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    width: 90%;
+}
+#right2 #down2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    gap: 3%;
+}
+#down2 #downLeft{
+    height: 100%;
+    width: 55%;
+    background-color: #e9df23;
+}
+#downLeft img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#down2 #downRight{
+    height: 100%;
+    width: 40%;
+    background-color: #938e29;
+}
+#downRight img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#update{
+    height: 13vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 4vh;
+    font-family: "Rubik Mono One", monospace;
+    
+}
+
+
+#model{
+    height: 70vh;
+    width: 100%;
+    padding: 1% 4%;
+}
+.star{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 2px solid black;
+   
+}
+.star:hover img{
+    animation-name: imgAnime;
+    animation-timing-function: linear;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes imgAnime {
+    from{
+        transform: translateX(0%);
+    }to{
+        transform: translateX(100%);
+    }
+}
+.star h4{
+    width: 4vw;
+    margin-left: 2vw;
+    font-family: sans-serif;
+    font-weight: 550; 
+    font-size: 0.7em;
+}
+.star img{
+    width: 5vw;
+    height: 11vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 6vw;
+}
+.star h2{
+    margin-left: 24vw;
+    font-size: 2.2em;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+#a1{
+    border-bottom: 2px solid black;
+}
+#k1::after{
+    content: "25th march 2020";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    left: 0%;
+    top: 87%;
+    font-size: 0.35em;
+}
+#k2::after{
+    content: "3rd february 2020";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    left: 0%;
+    top: 87%;
+    font-size: 0.35em;
+}
+#k3::after{
+    content: "14th january 2020";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    left: 0%;
+    top: 98%;
+    font-size: 0.35em;
+}
+#k4::after{
+    content: "08th january 2020";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    left: 0%;
+    top: 87%;
+    font-size: 0.35em;
+}
